@@ -1,6 +1,7 @@
 module.exports = {
   apps : [{
     name: 'matesdefabrica.com',
+    port:3002,
     script: './node_modules/nuxt/bin/nuxt.js',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
@@ -19,6 +20,7 @@ module.exports = {
 
   deploy : {
     production : {
+      port:3002,
       user : 'forge',
       host: '159.89.228.17',
       ref  : 'origin/master',
